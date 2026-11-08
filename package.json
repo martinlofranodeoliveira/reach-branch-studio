@@ -1,10 +1,19 @@
 {
   "name": "reach-branch-studio",
   "version": "0.1.0",
-  "type": "module",
   "private": true,
-  "description": "An educational 3-revolute-joint arm kinematics workbench in React and Three.js with analytic IK, elbow branches, signed radial alternatives, and joint-limit rejection.",
+  "description": "A browser-local React and Three.js workbench for an educational three-revolute-joint arm with analytic kinematics, elbow branches, signed-radial alternatives, and joint-limit rejection.",
+  "type": "module",
   "license": "MIT",
+  "author": "Lofrano Tecnologia",
+  "homepage": "https://lofranotecnologia.com.br",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martinlofranodeoliveira/reach-branch-studio"
+  },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
@@ -14,17 +23,27 @@
     "demo": "node scripts/check.mjs demo"
   },
   "dependencies": {
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "three": "0.170.0"
+    "@fontsource-variable/public-sans": "5.3.0",
+    "@fontsource/public-sans": "5.3.0",
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "lucide-react": "1.69.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.184.0"
   },
   "devDependencies": {
-    "@types/node": "22.8.7",
-    "@types/react": "18.3.12",
-    "@types/react-dom": "18.3.1",
-    "@types/three": "0.169.0",
-    "@vitejs/plugin-react": "4.3.3",
-    "typescript": "5.6.3",
-    "vite": "5.4.10"
+    "@react-three/test-renderer": "9.1.1",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.8",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.184.1",
+    "@vitejs/plugin-react": "6.2.1",
+    "jsdom": "30.1.3",
+    "typescript": "7.0.2",
+    "vite": "8.3.6"
   }
 }
